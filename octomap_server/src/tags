@@ -1,0 +1,79 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MapSaver	octomap_saver.cpp	/^  MapSaver(const std::string& mapname, bool full){$/;"	f	class:MapSaver
+MapSaver	octomap_saver.cpp	/^class MapSaver{$/;"	c	file:
+OctomapServer	OctomapServer.cpp	/^OctomapServer::OctomapServer(ros::NodeHandle private_nh_)$/;"	f	class:octomap_server::OctomapServer
+OctomapServerMultilayer	OctomapServerMultilayer.cpp	/^OctomapServerMultilayer::OctomapServerMultilayer(ros::NodeHandle private_nh_)$/;"	f	class:octomap_server::OctomapServerMultilayer
+OctomapServerNodelet	octomap_server_nodelet.cpp	/^class OctomapServerNodelet : public nodelet::Nodelet$/;"	c	namespace:octomap_server	file:
+OctomapServerStatic	octomap_server_static.cpp	/^  OctomapServerStatic(const std::string& filename)$/;"	f	class:OctomapServerStatic
+OctomapServerStatic	octomap_server_static.cpp	/^class OctomapServerStatic{$/;"	c	file:
+TrackingOctomapServer	TrackingOctomapServer.cpp	/^TrackingOctomapServer::TrackingOctomapServer(const std::string& filename) :$/;"	f	class:octomap_server::TrackingOctomapServer
+USAGE	octomap_saver.cpp	38;"	d	file:
+USAGE	octomap_server_multilayer.cpp	34;"	d	file:
+USAGE	octomap_server_node.cpp	42;"	d	file:
+USAGE	octomap_server_static.cpp	38;"	d	file:
+USAGE	octomap_tracking_server_node.cpp	33;"	d	file:
+adjustMapData	OctomapServer.cpp	/^void OctomapServer::adjustMapData(nav_msgs::OccupancyGrid& map, const nav_msgs::MapMetaData& oldMapInfo) const{$/;"	f	class:octomap_server::OctomapServer
+clearBBXSrv	OctomapServer.cpp	/^bool OctomapServer::clearBBXSrv(BBXSrv::Request& req, BBXSrv::Response& resp){$/;"	f	class:octomap_server::OctomapServer
+clearupdatemap	OctomapServer.cpp	/^void OctomapServer::clearupdatemap(int maxx,int maxy,int minx,int miny)$/;"	f	class:octomap_server::OctomapServer
+delOrigin	OctomapServer.cpp	/^void OctomapServer::delOrigin()$/;"	f	class:octomap_server::OctomapServer
+delend	OctomapServer.cpp	/^void OctomapServer::delend()$/;"	f	class:octomap_server::OctomapServer
+filterGroundPlane	OctomapServer.cpp	/^void OctomapServer::filterGroundPlane(const PCLPointCloud& pc, PCLPointCloud& ground, PCLPointCloud& nonground) const{$/;"	f	class:octomap_server::OctomapServer
+handleFreeNode	OctomapServer.cpp	/^void OctomapServer::handleFreeNode(const OcTreeT::iterator& it){$/;"	f	class:octomap_server::OctomapServer
+handleFreeNodeInBBX	OctomapServer.cpp	/^void OctomapServer::handleFreeNodeInBBX(const OcTreeT::iterator& it){$/;"	f	class:octomap_server::OctomapServer
+handleOccupiedNode	OctomapServer.cpp	/^void OctomapServer::handleOccupiedNode(const OcTreeT::iterator& it){$/;"	f	class:octomap_server::OctomapServer
+handleOccupiedNodeInBBX	OctomapServer.cpp	/^void OctomapServer::handleOccupiedNodeInBBX(const OcTreeT::iterator& it){$/;"	f	class:octomap_server::OctomapServer
+handlePostNodeTraversal	OctomapServer.cpp	/^void OctomapServer::handlePostNodeTraversal(const ros::Time& rostime){$/;"	f	class:octomap_server::OctomapServer
+handlePostNodeTraversal	OctomapServerMultilayer.cpp	/^void OctomapServerMultilayer::handlePostNodeTraversal(const ros::Time& rostime){$/;"	f	class:octomap_server::OctomapServerMultilayer
+handlePreNodeTraversal	OctomapServer.cpp	/^void OctomapServer::handlePreNodeTraversal(const ros::Time& rostime){$/;"	f	class:octomap_server::OctomapServer
+handlePreNodeTraversal	OctomapServerMultilayer.cpp	/^void OctomapServerMultilayer::handlePreNodeTraversal(const ros::Time& rostime){$/;"	f	class:octomap_server::OctomapServerMultilayer
+heightMapColor	OctomapServer.cpp	/^std_msgs::ColorRGBA OctomapServer::heightMapColor(double h) {$/;"	f	class:octomap_server::OctomapServer
+insertCloudCallback	OctomapServer.cpp	/^void OctomapServer::insertCloudCallback(const sensor_msgs::PointCloud2::ConstPtr& cloud){$/;"	f	class:octomap_server::OctomapServer
+insertScan	OctomapServer.cpp	/^void OctomapServer::insertScan(const tf::Point& sensorOriginTf, const PCLPointCloud& ground, const PCLPointCloud& nonground){$/;"	f	class:octomap_server::OctomapServer
+insertScan	TrackingOctomapServer.cpp	/^void TrackingOctomapServer::insertScan(const tf::Point & sensorOrigin, const PCLPointCloud & ground, const PCLPointCloud & nonground) {$/;"	f	class:octomap_server::TrackingOctomapServer
+isSpeckleNode	OctomapServer.cpp	/^bool OctomapServer::isSpeckleNode(const OcTreeKey&nKey) const {$/;"	f	class:octomap_server::OctomapServer
+m_nh	octomap_server_static.cpp	/^  ros::NodeHandle m_nh;$/;"	m	class:OctomapServerStatic	file:
+m_octomapBinaryService	octomap_server_static.cpp	/^  ros::ServiceServer m_octomapBinaryService, m_octomapFullService;$/;"	m	class:OctomapServerStatic	file:
+m_octomapFullService	octomap_server_static.cpp	/^  ros::ServiceServer m_octomapBinaryService, m_octomapFullService;$/;"	m	class:OctomapServerStatic	file:
+m_octree	octomap_server_static.cpp	/^  AbstractOccupancyOcTree* m_octree;$/;"	m	class:OctomapServerStatic	file:
+m_worldFrameId	octomap_server_static.cpp	/^  std::string m_worldFrameId;$/;"	m	class:OctomapServerStatic	file:
+main	octomap_saver.cpp	/^int main(int argc, char** argv){$/;"	f
+main	octomap_server_multilayer.cpp	/^int main(int argc, char** argv){$/;"	f
+main	octomap_server_node.cpp	/^int main(int argc, char** argv){$/;"	f
+main	octomap_server_static.cpp	/^int main(int argc, char** argv){$/;"	f
+main	octomap_tracking_server_node.cpp	/^int main(int argc, char** argv){$/;"	f
+msgcallback	OctomapServer.cpp	/^void OctomapServer::msgcallback($/;"	f	class:octomap_server::OctomapServer
+num	OctomapServer.cpp	/^int num;$/;"	v
+octomapBinarySrv	OctomapServer.cpp	/^bool OctomapServer::octomapBinarySrv(OctomapSrv::Request  &req,$/;"	f	class:octomap_server::OctomapServer
+octomapBinarySrv	octomap_server_static.cpp	/^  bool octomapBinarySrv(GetOctomap::Request  &req,$/;"	f	class:OctomapServerStatic
+octomapFullSrv	OctomapServer.cpp	/^bool OctomapServer::octomapFullSrv(OctomapSrv::Request  &req,$/;"	f	class:octomap_server::OctomapServer
+octomapFullSrv	octomap_server_static.cpp	/^  bool octomapFullSrv(GetOctomap::Request  &req,$/;"	f	class:OctomapServerStatic
+octomap_server	OctomapServer.cpp	/^namespace octomap_server{$/;"	n	file:
+octomap_server	OctomapServerMultilayer.cpp	/^namespace octomap_server{$/;"	n	file:
+octomap_server	TrackingOctomapServer.cpp	/^namespace octomap_server {$/;"	n	file:
+octomap_server	octomap_server_nodelet.cpp	/^namespace octomap_server$/;"	n	file:
+onInit	octomap_server_nodelet.cpp	/^  virtual void onInit()$/;"	f	class:octomap_server::OctomapServerNodelet
+openFile	OctomapServer.cpp	/^bool OctomapServer::openFile(const std::string& filename){$/;"	f	class:octomap_server::OctomapServer
+publishAll	OctomapServer.cpp	/^void OctomapServer::publishAll(const ros::Time& rostime){$/;"	f	class:octomap_server::OctomapServer
+publishBinaryOctoMap	OctomapServer.cpp	/^void OctomapServer::publishBinaryOctoMap(const ros::Time& rostime) const{$/;"	f	class:octomap_server::OctomapServer
+publishFullOctoMap	OctomapServer.cpp	/^void OctomapServer::publishFullOctoMap(const ros::Time& rostime) const{$/;"	f	class:octomap_server::OctomapServer
+reconfigureCallback	OctomapServer.cpp	/^void OctomapServer::reconfigureCallback(octomap_server::OctomapServerConfig& config, uint32_t level){$/;"	f	class:octomap_server::OctomapServer
+resetSrv	OctomapServer.cpp	/^bool OctomapServer::resetSrv(std_srvs::Empty::Request& req, std_srvs::Empty::Response& resp) {$/;"	f	class:octomap_server::OctomapServer
+savemap	OctomapServer.cpp	/^void OctomapServer::savemap(const std_msgs::String::ConstPtr& msg)$/;"	f	class:octomap_server::OctomapServer
+server_	octomap_server_nodelet.cpp	/^  boost::shared_ptr<OctomapServer> server_;$/;"	m	class:octomap_server::OctomapServerNodelet	file:
+setOrigin	OctomapServer.cpp	/^void OctomapServer::setOrigin()$/;"	f	class:octomap_server::OctomapServer
+setbyhuman	OctomapServer.cpp	/^void OctomapServer::setbyhuman(const std_msgs::String::ConstPtr& msg)$/;"	f	class:octomap_server::OctomapServer
+setend	OctomapServer.cpp	/^void OctomapServer::setend()$/;"	f	class:octomap_server::OctomapServer
+trackCallback	TrackingOctomapServer.cpp	/^void TrackingOctomapServer::trackCallback(sensor_msgs::PointCloud2Ptr cloud) {$/;"	f	class:octomap_server::TrackingOctomapServer
+trackChanges	TrackingOctomapServer.cpp	/^void TrackingOctomapServer::trackChanges() {$/;"	f	class:octomap_server::TrackingOctomapServer
+update2DMap	OctomapServer.cpp	/^void OctomapServer::update2DMap(const OcTreeT::iterator& it, bool occupied){$/;"	f	class:octomap_server::OctomapServer
+update2DMap	OctomapServer.cpp	/^void OctomapServer::update2DMap(const octomap::upKey::iterator& it, bool occupied)$/;"	f	class:octomap_server::OctomapServer
+update2DMap	OctomapServerMultilayer.cpp	/^void OctomapServerMultilayer::update2DMap(const OcTreeT::iterator& it, bool occupied){$/;"	f	class:octomap_server::OctomapServerMultilayer
+~OctomapServer	OctomapServer.cpp	/^OctomapServer::~OctomapServer(){$/;"	f	class:octomap_server::OctomapServer
+~OctomapServerMultilayer	OctomapServerMultilayer.cpp	/^OctomapServerMultilayer::~OctomapServerMultilayer(){$/;"	f	class:octomap_server::OctomapServerMultilayer
+~OctomapServerStatic	octomap_server_static.cpp	/^  ~OctomapServerStatic(){$/;"	f	class:OctomapServerStatic
+~TrackingOctomapServer	TrackingOctomapServer.cpp	/^TrackingOctomapServer::~TrackingOctomapServer() {$/;"	f	class:octomap_server::TrackingOctomapServer
