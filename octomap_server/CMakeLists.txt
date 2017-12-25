@@ -31,7 +31,7 @@ find_package(catkin REQUIRED COMPONENTS ${PACKAGE_DEPENDENCIES})
 find_package(PCL 1.7 REQUIRED QUIET COMPONENTS common sample_consensus io segmentation filters)
 #find_package(PCL 1.8 REQUIRED)
 
-find_package(octomap REQUIRED)
+find_package(octomap 1.5.8 REQUIRED)
 
 find_package(OpenCV 2.4 REQUIRED)
 

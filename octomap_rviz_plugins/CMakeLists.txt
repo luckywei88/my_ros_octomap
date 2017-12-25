@@ -7,7 +7,7 @@ find_package(catkin REQUIRED COMPONENTS octomap_msgs
                                         
 )
 
-find_package(octomap REQUIRED)
+find_package(octomap 1.5.8 REQUIRED)
 find_package(Boost REQUIRED COMPONENTS thread )
 
 find_package(Qt4 COMPONENTS QtCore QtGui REQUIRED)
