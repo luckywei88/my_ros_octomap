@@ -118,7 +118,8 @@ public:
 		const	sensor_msgs::PointCloud2ConstPtr& pointcloud);
   virtual void setbyhuman(const std_msgs::String::ConstPtr& msg);
   virtual void savemap(const std_msgs::String::ConstPtr& filename);
-
+  virtual void InitRobot(std::string filename);
+  virtual void SendRobot(const ros::Time& rostime);
   
 
 protected:
@@ -229,7 +230,7 @@ protected:
 
   static std_msgs::ColorRGBA heightMapColor(double h);
   ros::NodeHandle m_nh;
-  ros::Publisher  m_markerPub, m_binaryMapPub, m_fullMapPub, m_pointCloudPub, m_collisionObjectPub, m_mapPub, m_cmapPub, m_fmapPub, m_fmarkerPub;
+  ros::Publisher  m_robotPub,m_markerPub, m_binaryMapPub, m_fullMapPub, m_pointCloudPub, m_collisionObjectPub, m_mapPub, m_cmapPub, m_fmapPub, m_fmarkerPub;
   message_filters::Subscriber<sensor_msgs::PointCloud2>* m_pointCloudSub;
 
 
@@ -262,6 +263,7 @@ protected:
   dynamic_reconfigure::Server<OctomapServerConfig> m_reconfigureServer;
 
   OcTreeT* m_octree;
+  OcTreeT* robot_octree;
   octomap::KeyRay m_keyRay;  // temp storage for ray casting
   octomap::OcTreeKey m_updateBBXMin;
   octomap::OcTreeKey m_updateBBXMax;
@@ -274,6 +276,8 @@ protected:
   bool m_dynamicmap,m_completemap;
   std::string m_worldFrameId; // the map frame
   std::string m_baseFrameId; // base of the robot for ground plane filtering
+  std::string initfile;
+  std::string m_torsoFrameId;
   bool m_useHeightMap;
   std_msgs::ColorRGBA m_color;
   std_msgs::ColorRGBA m_colorFree;
@@ -286,6 +290,7 @@ protected:
   unsigned m_treeDepth;
   unsigned m_maxTreeDepth;
   octomap::point3d sensorOrigin;
+  PCLPointCloud torsoPC;
   float anend[3];
 
   double m_pointcloudMinZ;
